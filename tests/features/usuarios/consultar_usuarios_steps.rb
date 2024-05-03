@@ -20,7 +20,7 @@ Então('eu devo validar que foi retornado um usuário com sucesso') do
 end
 
 Quando('eu consultar um ID inexistente') do
-  @resposta = Usuarios.new.consultar_por_id(20)
+  @resposta = Usuarios.new.consultar_por_id(200)
 end
 
 Então('eu devo receber a mensagem {string}') do |mensagem|
